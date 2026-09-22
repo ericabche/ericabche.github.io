@@ -274,6 +274,56 @@
     color:#5C6770;
   }
 
+  /* ---------- SPRÅKBRYTER ---------- */
+nav ul{ align-items:center; }
+
+.lang-toggle{
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  padding:3px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:var(--paper-alt);
+  cursor:pointer;
+  font-family:'IBM Plex Mono', monospace;
+  font-size:12px;
+  font-weight:500;
+}
+.lang-toggle:hover{ border-color:var(--accent); }
+
+.lang-toggle span{
+  position:relative;
+  z-index:1;
+  width:34px;
+  padding:3px 0;
+  text-align:center;
+  color:var(--muted);
+  transition:color .25s ease;
+}
+
+/* Kulen som glir */
+.lang-toggle::before{
+  content:"";
+  position:absolute;
+  top:3px;
+  left:3px;
+  width:34px;
+  height:calc(100% - 6px);
+  border-radius:999px;
+  background:var(--accent);
+  transition:transform .25s ease;
+}
+.lang-toggle[aria-checked="true"]::before{ transform:translateX(34px); }
+
+/* Aktivt språk får hvit tekst oppå kulen */
+.lang-toggle[aria-checked="false"] span:first-child,
+.lang-toggle[aria-checked="true"] span:last-child{ color:#fff; }
+
+@media (prefers-reduced-motion: reduce){
+  .lang-toggle::before, .lang-toggle span{ transition:none; }
+}
+
   @media (max-width: 900px){
     section#prosjekter{ grid-template-columns:1fr; }
     nav{ flex-direction:column; align-items:flex-start; gap:10px; }

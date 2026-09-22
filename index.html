@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Erica Bich Che — Portefølje</title>
-  <meta name="description" content="Portefølje for Erica Bich Che, student i informatikk med spesialisering i datasikkerhet ved Høgskolen i Østfold." />
+  <title data-i18n="meta.title">Erica Bich Che — Portefølje</title>
+  <meta name="description" data-i18n-content="meta.description" content="Portefølje for Erica Bich Che, student i informatikk med spesialisering i datasikkerhet ved Høgskolen i Østfold." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -13,28 +13,33 @@
 <body>
 
 <nav>
-  <p class="brand">Erica Bich Che - Portefølje</p>
+  <p class="brand" data-i18n="nav.brand">Erica Bich Che - Portefølje</p>
   <ul>
-    <li><a href="#om">Om</a></li>
-    <li><a href="#prosjekter">Prosjekter</a></li>
-    <li><a href="#ferdigheter">Ferdigheter</a></li>
-    <li><a href="#kontakt">Kontakt</a></li>
+    <li><a href="#om" data-i18n="nav.om">Om</a></li>
+    <li><a href="#prosjekter" data-i18n="nav.prosjekter">Prosjekter</a></li>
+    <li><a href="#ferdigheter" data-i18n="nav.ferdigheter">Ferdigheter</a></li>
+    <li><a href="#kontakt" data-i18n="nav.kontakt">Kontakt</a></li>
+    <li>
+      <button type="button" class="lang-toggle" role="switch" aria-checked="false" aria-label="English">
+        <span aria-hidden="true">NO</span><span aria-hidden="true">EN</span>
+      </button>
+    </li>
   </ul>
 </nav>
 
 <header class="hero">
-  <p class="col eyebrow">Portefølje</p>
+  <p class="col eyebrow" data-i18n="hero.eyebrow">Portefølje</p>
   <h1 class="col">Erica Bich Che</h1>
-  <p class="col role">Student i informatikk med spesialisering i datasikkerhet. Bygger og angriper systemer for å forstå dem bedre.</p>
-  <p class="col meta">Høgskolen i Østfold · Halden &nbsp;·&nbsp; Sarpsborg, Norge</p>
+  <p class="col role" data-i18n="hero.role">Student i informatikk med spesialisering i datasikkerhet. Bygger og angriper systemer for å forstå dem bedre.</p>
+  <p class="col meta" data-i18n="hero.meta">Høgskolen i Østfold · Halden &nbsp;·&nbsp; Sarpsborg, Norge</p>
 </header>
 
 <main>
 
   <section id="om">
-    <p class="kicker">Om meg</p>
-    <h2>Fra omsorg til kode</h2>
-    <p class="about-text">
+    <p class="kicker" data-i18n="om.kicker">Om meg</p>
+    <h2 data-i18n="om.tittel">Fra omsorg til kode</h2>
+    <p class="about-text" data-i18n="om.tekst">
       Jeg er avsluttende student i informatikk med spesialisering i datasikkerhet ved Høgskolen i Østfold.
       Ved siden av studiet har jeg flere år med arbeidserfaring fra helse og service, noe som har lært meg
       å jobbe strukturert under press og ta ansvar uten tett oppfølging. Nå bruker jeg den samme
@@ -43,17 +48,17 @@
   </section>
 
   <section id="prosjekter" class="alt">
-    <div class="project-heading">
-      <p class="kicker">Prosjekter</p>
-      <h2>Utvalgt arbeid</h2>
-    </div>
+    <header class="project-heading">
+      <p class="kicker" data-i18n="prosjekter.kicker">Prosjekter</p>
+      <h2 data-i18n="prosjekter.tittel">Utvalgt arbeid</h2>
+    </header>
 
     <article class="col project">
       <header>
-        <h3>Sikkerhetstesting av webapplikasjon</h3>
-        <time>2026 · Datasikkerhet i utvikling og drift</time>
+        <h3 data-i18n="p1.tittel">Sikkerhetstesting av webapplikasjon</h3>
+        <time data-i18n="p1.emne">2026 · Datasikkerhet i utvikling og drift</time>
       </header>
-      <p>
+      <p data-i18n="p1.tekst">
         Utviklet i gruppe en webapplikasjon for delvis anonyme tilbakemeldinger fra studenter til
         forelesere, med PHP og MySQL uten rammeverk. Arbeidet omfattet både AI-assistert utvikling
         og utvikling fra bunnen av. Gjennomførte sikkerhetstesting av andre gruppers løsninger og
@@ -61,21 +66,20 @@
         praktisk erfaring med sammenhengen mellom utviklingsvalg og sikkerhet.
       </p>
       <dl class="stack">
-        <dt>Teknologier</dt>
-        <dd>PHP · SQL · Sårbarhetsanalyse · Sikker webutvikling</dd>
+        <dt data-i18n="felles.teknologier">Teknologier</dt>
+        <dd data-i18n="p1.stack">PHP · SQL · Sårbarhetsanalyse · Sikker webutvikling</dd>
       </dl>
-      <footer> 
-        <a href="https://github.com/ericabche/DatasikkerhetUtviklingOgDrift_V26" class="repo-link" target="_blank" rel="noopener">Se kode ↗</a>
+      <footer>
+        <a href="https://github.com/ericabche/DatasikkerhetUtviklingOgDrift_V26" class="repo-link" target="_blank" rel="noopener" data-i18n="felles.sekode">Se kode ↗</a>
       </footer>
-      
     </article>
 
     <article class="col project">
       <header>
-        <h3>Bussapp — Product Owner</h3>
-        <time>2025 · Software Engineering og testing</time>
+        <h3 data-i18n="p2.tittel">Bussapp — Product Owner</h3>
+        <time data-i18n="p2.emne">2025 · Software Engineering og testing</time>
       </header>
-      <p>
+      <p data-i18n="p2.tekst">
         Var Product Owner i et team på fem som utviklet en prototype for en bussapp med rutesøk,
         avgangsoversikt og digital billettering med simulert betaling. Hadde ansvar for
         kravprioritering, brukerhistorier og hoveddelen av prosjektdokumentasjonen. Arbeidet også
@@ -83,20 +87,20 @@
         gjennomført i fire sprinter med en Scrum-inspirert arbeidsform.
       </p>
       <dl class="stack">
-        <dt>Teknologier</dt>
-        <dd>Java Spring Boot · React Native · PostgreSQL · Docker · GitHub </dd>
+        <dt data-i18n="felles.teknologier">Teknologier</dt>
+        <dd>Java Spring Boot · React Native · PostgreSQL · Docker · GitHub</dd>
       </dl>
-      <footer> 
-        <a href="https://github.com/ericabche/SoftwareEngineeringOgTesting-H25" class="repo-link" target="_blank" rel="noopener">Se kode ↗</a>
+      <footer>
+        <a href="https://github.com/ericabche/SoftwareEngineeringOgTesting-H25" class="repo-link" target="_blank" rel="noopener" data-i18n="felles.sekode">Se kode ↗</a>
       </footer>
     </article>
 
-        <article class="col project">
+    <article class="col project">
       <header>
-        <h3>MermaidLib — C#-bibliotek for diagramgenerering</h3>
-        <time>2026 · Rammeverk og .NET</time>
+        <h3 data-i18n="p3.tittel">MermaidLib — C#-bibliotek for diagramgenerering</h3>
+        <time data-i18n="p3.emne">2026 · Rammeverk og .NET</time>
       </header>
-      <p>
+      <p data-i18n="p3.tekst">
         Implementerte SequenceDiagram-funksjonaliteten (inkludert 23 enhetstester) i et C#-bibliotek
         som genererer Mermaid-diagramsyntaks programmatisk, i en gruppe på fire. Fulgte en test-drevet
         tilnærming til API-design etter prinsippene i Framework Design Guidelines. Skrev hele
@@ -104,20 +108,20 @@
         forbedre en Azure DevOps CI/CD-pipeline som i lang tid feilet.
       </p>
       <dl class="stack">
-        <dt>Teknologier</dt>
+        <dt data-i18n="felles.teknologier">Teknologier</dt>
         <dd>C# · NuGet · Azure DevOps CI/CD · MSTest · LaTeX</dd>
       </dl>
-      <footer> 
-        <a href="https://github.com/ericabche/RammeverkOg.NET_V26" class="repo-link" target="_blank" rel="noopener">Se kode ↗</a>
+      <footer>
+        <a href="https://github.com/ericabche/RammeverkOg.NET_V26" class="repo-link" target="_blank" rel="noopener" data-i18n="felles.sekode">Se kode ↗</a>
       </footer>
     </article>
 
-        <article class="col project">
+    <article class="col project">
       <header>
-        <h3>Skismøring-anbefaling — Databasedesign</h3>
-        <time>2025 · Databasesystemer </time>
+        <h3 data-i18n="p4.tittel">Skismøring-anbefaling — Databasedesign</h3>
+        <time data-i18n="p4.emne">2025 · Databasesystemer</time>
       </header>
-      <p>
+      <p data-i18n="p4.tekst">
         Designet og implementerte en relasjonsdatabase for et anbefalingssystem for skismøring,
         sammen med én medstudent. Gjennomførte full normalisering fra unormalisert form til BCNF,
         bygget ER-modellen, og implementerte databasen i MySQL med views og SQL-spørringer for
@@ -125,21 +129,21 @@
         gjennom fremmednøkkelrelasjoner ved oppdatering og sletting av data.
       </p>
       <dl class="stack">
-        <dt>Teknologier</dt>
-        <dd>MySQL · SQL · ER-modellering · Normalisering (BCNF) · Views</dd>
+        <dt data-i18n="felles.teknologier">Teknologier</dt>
+        <dd data-i18n="p4.stack">MySQL · SQL · ER-modellering · Normalisering (BCNF) · Views</dd>
       </dl>
-      <footer> 
-        <a href="https://github.com/ericabche/MySQL-ProsjektEksamen-V25" class="repo-link" target="_blank" rel="noopener">Se kode ↗</a>
+      <footer>
+        <a href="https://github.com/ericabche/MySQL-ProsjektEksamen-V25" class="repo-link" target="_blank" rel="noopener" data-i18n="felles.sekode">Se kode ↗</a>
       </footer>
     </article>
   </section>
 
   <section id="ferdigheter">
-    <p class="kicker">Ferdigheter</p>
-    <h2>Verktøykasse</h2>
+    <p class="kicker" data-i18n="ferdigheter.kicker">Ferdigheter</p>
+    <h2 data-i18n="ferdigheter.tittel">Verktøykasse</h2>
 
     <section class="skill-group">
-      <h3>Programmering</h3>
+      <h3 data-i18n="ferdigheter.programmering">Programmering</h3>
       <ul>
         <li>Python</li>
         <li>Java</li>
@@ -150,22 +154,21 @@
     </section>
 
     <section class="skill-group">
-      <h3>Sikkerhet</h3>
+      <h3 data-i18n="ferdigheter.sikkerhet">Sikkerhet</h3>
       <ul>
-        <li>Sårbarhetsanalyse</li>
-        <li>Sikker webutvikling</li>
-        <li>Autentisering (JWT)</li>
-        <li>Kryptering (TLS)</li>
-        <li>GDPR-hensyn</li>
+        <li data-i18n="ferdigheter.sarbarhet">Sårbarhetsanalyse</li>
+        <li data-i18n="ferdigheter.sikkerweb">Sikker webutvikling</li>
+        <li data-i18n="ferdigheter.jwt">Autentisering (JWT)</li>
+        <li data-i18n="ferdigheter.tls">Kryptering (TLS)</li>
+        <li data-i18n="ferdigheter.gdpr">GDPR-hensyn</li>
       </ul>
     </section>
 
     <section class="skill-group">
-      <h3>Verktøy</h3>
+      <h3 data-i18n="ferdigheter.verktoy">Verktøy</h3>
       <ul>
         <li>Git / GitHub</li>
         <li>Azure DevOps</li>
-
         <li>MySQL / PostgreSQL</li>
         <li>Figma</li>
       </ul>
@@ -175,15 +178,15 @@
 </main>
 
 <footer id="kontakt">
-  <h2 class="col">Ta kontakt</h2>
-  <p class="col">Åpen for trainee- og graduatestillinger innen IT-sikkerhet og systemutvikling.</p>
+  <h2 class="col" data-i18n="kontakt.tittel">Ta kontakt</h2>
+  <p class="col" data-i18n="kontakt.tekst">Åpen for trainee- og graduatestillinger innen IT-sikkerhet og systemutvikling.</p>
   <ul class="col contact-links">
-    <li><a href="mailto:ericabichche@outlook.com" class="copy-email" title="Klikk for å kopiere e-postadressen">ericabichche@outlook.com</a></li>
-    <li><a href="https://github.com/ericabche" class="text-link" target="_blank">GitHub</a></li>
-    <li><a href="https://www.linkedin.com/in/ericache" target="_blank" class="text-link">LinkedIn</a></li>
-    <li><a href="cv/Erica_Bich_Che_CV.pdf" target="_blank" class="text-link">Last ned CV (PDF)</a></li>
+    <li><a href="mailto:ericabichche@outlook.com" class="copy-email" title="Klikk for å kopiere e-postadressen" data-i18n-title="kontakt.kopierTittel">ericabichche@outlook.com</a></li>
+    <li><a href="https://github.com/ericabche" class="text-link" target="_blank" rel="noopener">GitHub</a></li>
+    <li><a href="https://www.linkedin.com/in/ericache" class="text-link" target="_blank" rel="noopener">LinkedIn</a></li>
+    <li><a href="cv/Erica_Bich_Che_CV.pdf" class="text-link" target="_blank" rel="noopener" data-i18n="kontakt.cv" data-i18n-href="cv/Erica_Bich_Che_CV_EN.pdf">Last ned CV (PDF)</a></li>
   </ul>
-  <small class="col fineprint">Sist oppdatert 2026</small>
+  <small class="col fineprint" data-i18n="kontakt.oppdatert">Sist oppdatert 2026</small>
 </footer>
 
 <script src="js/script.js"></script>
